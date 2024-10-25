@@ -19,5 +19,6 @@ app.get('/', (req, res) => {
 
 //servidor
 app.listen(8080, () => {
+    console.log(`Iniciando no ambiente ${process.env.NODE_ENV}`)
     console.log('Servidor pronto na porta 8080"')
 })
