@@ -2,25 +2,25 @@ GET http://localhost:8080
 
 ###
 
-GET http://localhost:8080/usuario/7ea0bf3c-3541-4ad0-a2cc-e97654cc616e
+GET http://localhost:8080/api/usuario/7ea0bf3c-3541-4ad0-a2cc-e97654cc616e
 
 ###
 
-GET http://localhost:8080/usuario
+GET http://localhost:8080/api/usuario
 
 ###
 
-POST http://localhost:8080/usuario
+POST http://localhost:8080/api/usuario
 Content-type: application/json
 
 {
-    "email": "jpdr3551@gmail.com",
-    "senha": "vasco123"
+    "email": "tesla@gmail.com",
+    "senha": "sadj1923"
 }
 
 ###
 
-PUT http://localhost:8080/usuario?id=ea706d20-3470-415e-ae34-5fa0c891eadd
+PUT http://localhost:8080/api/usuario?id=ea706d20-3470-415e-ae34-5fa0c891eadd
 Content-type: application/json
 
 {
@@ -29,4 +29,4 @@ Content-type: application/json
 
 ###
 
-DELETE http://localhost:8080/usuario?id=d1fa1cff-e519-4c11-bede-4d7ad192796a
+DELETE http://localhost:8080/api/usuario?id=d1fa1cff-e519-4c11-bede-4d7ad192796a

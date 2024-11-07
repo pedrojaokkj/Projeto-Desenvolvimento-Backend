@@ -1,13 +1,13 @@
 
-GET http://localhost:8080/post
+GET http://localhost:8080/api/post
 
 ###
 
-GET http://localhost:8080/post/1
+GET http://localhost:8080/api/post/1
 
 ###
 
-POST http://localhost:8080/post
+POST http://localhost:8080/api/post
 Content-type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-type: application/json
 
 ###
 
-PUT http://localhost:8080/post?id=1
+PUT http://localhost:8080/api/post?id=1
 Content-type: application/json
 
 {
@@ -28,4 +28,4 @@ Content-type: application/json
 
 ###
 
-DELETE http://localhost:8080/post?id=d1fa1cff-e519-4c11-bede-4d7ad192796a
+DELETE http://localhost:8080/api/post?id=d1fa1cff-e519-4c11-bede-4d7ad192796a
