@@ -29,4 +29,4 @@ Content-type: application/json
 
 ###
 
-DELETE http://localhost:8080/api/usuario?id=d1fa1cff-e519-4c11-bede-4d7ad192796a
+DELETE http://localhost:8080/api/usuario?id=2

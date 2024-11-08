@@ -7,15 +7,15 @@ GET http://localhost:8080/api/post/1
 
 ###
 
-POST http://localhost:8080/api/post
-Content-type: application/json
+POST http://localhost:8080/api/posts
+Content-Type: application/json
+Authorization: Bearer 'Token'
 
 {
-    "titulo": "Programando para Backend",
-    "texto": "Meu texto",
-    "userId" : 1
+    "titulo": "Programando em JS Backend",
+    "texto": "Título do texto...",
+    "userId": 3
 }
-
 ###
 
 PUT http://localhost:8080/api/post?id=1
