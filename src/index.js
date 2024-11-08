@@ -24,9 +24,14 @@ app.get('/api', (req, res) => {
     res.send('Hello World from Express')
 })
 
+//midleware error
+app.use((err, req, res, next) => {
+    const { statusCode, msg } = err
+    res.status(statusCode).json({msg: msg})
+})
 
 //servidor
 app.listen(8080, () => {
-    console.log(`Iniciando no ambiente ${process.env.NODE_ENV}`)
-    console.log('Servidor pronto na porta 8080"')
+    logger.info(`Iniciando no ambiente ${process.env.NODE_ENV}`)
+    logger.info('Servidor pronto na porta 8080')
 })
